@@ -6,7 +6,7 @@
   --background-primary-color: #ffffff;
   --background-secondary-color: #2f303a;
   --background-body-color: #e5e5e5;
-  --background-example-color:#eeeeee;
+  --background-example-color: #eeeeee;
   --background-ourteam-color: #f5f4fa;
   --header-logo-color: #000000;
   --address-info-color: rgba(255, 255, 255, 0.6);
@@ -172,7 +172,7 @@
 /* Портфоліо */
 
 .example {
-  background-color: var(--background-advantages-color);
+  background-color: var(--background-primary-color);
 }
 
 .example-header {
@@ -205,7 +205,7 @@
 }
 
 .example-item {
-  background-color: var(--background-example-color);
+  border-color: var(--background-example-color);
 }
 
 .example-name {
