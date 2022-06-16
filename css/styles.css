@@ -2,47 +2,62 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --accent-hero-color: #188ce8;
   --background-primary-color: #ffffff;
   --background-secondary-color: #2f303a;
-  --inactive-button-color: #f5f4fa;
+  --background-body-color: #e5e5e5;
+  --background-example-color:#eeeeee;
+  --background-ourteam-color: #f5f4fa;
+  --header-logo-color: #000000;
+  --address-info-color: rgba(255, 255, 255, 0.6);
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  list-style-type: none;
 }
 
 /* Header */
+
+.header {
+  background-color: var(--background-primary-color);
+}
 
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  color: #000000;
+  line-height: 1.19;
+  color: var(--accent-color);
   text-decoration: none;
 }
-.second-logo {
-  color: var(--accent-color);
+
+.header-logo {
+  color: var(--header-logo-color);
 }
+
 .remove-pointer {
   list-style-type: none;
 }
+
+.current {
+  color: var(--accent-color);
+}
+
 .header-link {
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .navigation-link {
   color: var(--title-text-color);
 }
 .company-info {
-  color: var(--primary-text-color);
+  color: inherit;
 }
+
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
@@ -50,34 +65,50 @@
 
 /* Footer */
 
+.footer {
+  background-color: var(--background-secondary-color);
+}
+
+.footer-logo {
+  color: var(--background-primary-color);
+}
+
 .address {
   font-style: normal;
   color: var(--background-primary-color);
-  background-color: var(--background-secondary-color);
 }
+
 .address-info {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-info-color);
   text-decoration: none;
 }
+
+.address-info:hover,
+.address-info:focus {
+  color: var(--accent-color);
+}
+
 /* Студія */
 
 .hero {
   background-color: var(--background-secondary-color);
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-primary-color);
 }
+
 .hero-button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   padding: 10px 32px;
   color: var(--background-primary-color);
@@ -85,30 +116,53 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-width: 0;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-hero-color);
+}
+
+.advantages,
+.whatwedo {
+  background-color: var(--background-primary-color);
 }
 
 .advantages-header {
   display: none;
 }
+
 .advantages-title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: inherit;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+
 .whatwedo-title,
 .ourteam-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
 }
+
+.ourteam {
+  background-color: var(--background-ourteam-color);
+}
+
 .ourteam-list {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.1875;
 }
+
+.ourteam-item {
+  background-color: var(--background-primary-color);
+}
+
 .ourteam-name {
   font-weight: 500;
   font-size: inherit;
@@ -117,6 +171,10 @@
 
 /* Портфоліо */
 
+.example {
+  background-color: var(--background-advantages-color);
+}
+
 .example-header {
   display: none;
 }
@@ -124,14 +182,16 @@
 .example-button {
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.624;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   padding: 6px 22px;
-  background-color: var(--inactive-button-color);
+  background-color: var(--background-ourteam-color);
   border-radius: 4px;
   border-width: 0;
+  cursor: pointer;
 }
+
 .example-button:hover,
 .example-button:focus {
   background: var(--accent-color);
@@ -144,15 +204,19 @@
   color: inherit;
 }
 
+.example-item {
+  background-color: var(--background-example-color);
+}
+
 .example-name {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
 .example-type {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
 }
