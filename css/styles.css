@@ -10,6 +10,9 @@
   --background-ourteam-color: #f5f4fa;
   --header-logo-color: #000000;
   --address-info-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.71;
@@ -180,6 +183,7 @@
 }
 
 .example-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.624;
